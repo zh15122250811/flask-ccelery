@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<form action="{{ url_for('user.handle_register') }}" method="POST">
+    <span>用户名:</span> <input type="text" name="username"> <br>
+    <span>密码:</span> <input type="password" name="password"> <br>
+    <span>邮箱:</span> <input type="email" name="email"> <br>
+    <span>性别:</span>
+        <input type="radio" id="man" name="gender" value="male"><label for="man">男</label>
+        <input type="radio" id="woman" name="gender" value="female"><label for="woman">女</label>
+        <input type="radio" id="baomi" name="gender" value="secret"><label for="baomi">保密</label>
+        <br>
+    <span>年龄:</span> <input type="number" name="age"> <br>
+    <input type="submit" value="注册">
+</form>
+</body>
+</html>
